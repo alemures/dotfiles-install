@@ -1,5 +1,5 @@
 ## debian installation and configuration
-Guide to install and configure a lightweight debian for development using i3, refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps.
+Refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps.
 
 #### Required Packages
 ```
@@ -18,6 +18,6 @@ sudo apt install ranger
 sudo apt install vim psmisc htop
 ```
 
-Finally run the script setup-dotfiles.sh.
+Finally run the script `install.sh`.
 
 see: https://www.atlassian.com/git/tutorials/dotfiles
