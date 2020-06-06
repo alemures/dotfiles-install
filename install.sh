@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 git clone --bare https://github.com/alemures/dotfiles.git $HOME/dotfiles
 function config {
