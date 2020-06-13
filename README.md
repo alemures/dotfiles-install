@@ -8,14 +8,14 @@ sudo apt install xorg i3
 # Fonts and Icons
 sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
-sudo apt install alsa-utils hsetroot git
+sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot
 # Software
-sudo apt install ranger
+sudo apt install vim ranger
 ```
 
 #### Optional Packages
 ```
-sudo apt install vim psmisc htop
+sudo apt install psmisc htop
 ```
 
 Finally run the script `install.sh`.
