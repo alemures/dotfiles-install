@@ -8,7 +8,7 @@ sudo apt install xorg i3
 # Fonts and Icons
 sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
-sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot
+sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot ssh-askpass
 # Software
 sudo apt install vim ranger
 ```
