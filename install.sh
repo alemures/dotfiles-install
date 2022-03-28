@@ -8,7 +8,7 @@ if [ -d $DOTFILES_FOLDER ]; then
   exit 0
 fi;
 
-git clone --bare https://github.com/alemures/dotfiles.git $DOTFILES_FOLDER
+git clone --bare --recurse-submodules -j8 https://github.com/alemures/dotfiles.git $DOTFILES_FOLDER
 function config {
    /usr/bin/git --git-dir=$DOTFILES_FOLDER/ --work-tree=$HOME $@
 }
