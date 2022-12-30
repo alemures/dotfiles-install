@@ -1,12 +1,16 @@
 ## dotfiles installation script
-This repo is intended to be cloned in a fresh new install of debian,refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps. Once the base installation is ready and configured, install the required packages. 
+
+This repo is intended to be cloned in a fresh new install of debian,refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps. Once the base installation is ready and configured, install the required packages.
 
 see: https://www.atlassian.com/git/tutorials/dotfiles
 
 #### Required Packages
+
 ```
 # Window Manager
 sudo apt install xorg i3
+# Themes gtk and qt
+sudo apt gnome-themes-standard adwaita-icon-theme adwaita-qt qt-style-plugins qt5ct
 # Fonts and Icons
 sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
@@ -16,21 +20,26 @@ sudo apt install vim-gtk3 ranger
 ```
 
 #### Optional Packages
+
 ```
 sudo apt install psmisc htop
 ```
+
+Install nvm and nodejs LTS since some scripts are written in nodejs see [nvm install](https://github.com/nvm-sh/nvm#install--update-script)
 
 Finally run the script `install.sh`.
 
 ### Fixing keybindings in macOS under VirtualBox
 
-Under *keyboard settings / Modifier Keys...* set the following remapings:
-* Caps Lock -> Control
-* Control -> Command
-* Option -> Option
-* Command -> Control
+Under _keyboard settings / Modifier Keys..._ set the following remapings:
+
+- Caps Lock -> Control
+- Control -> Command
+- Option -> Option
+- Command -> Control
 
 Then after the dotfiles installation is done, do the following changes into the i3 config file:
+
 ```diff
 -exec --no-startup-id setxkbmap -option caps:super
 +exec --no-startup-id setxkbmap -option caps:ctrl_modifier
@@ -38,6 +47,7 @@ Then after the dotfiles installation is done, do the following changes into the 
 ```
 
 Create the `$HOME/.Xmodmap` file with the following content:
+
 ```
 clear control
 clear mod4
