@@ -10,11 +10,11 @@ see: https://www.atlassian.com/git/tutorials/dotfiles
 # Window Manager
 sudo apt install xorg i3
 # Themes gtk and qt
-sudo apt gnome-themes-standard adwaita-icon-theme adwaita-qt qt-style-plugins qt5ct
+sudo apt install gnome-themes-standard adwaita-icon-theme adwaita-qt qt5ct
 # Fonts and Icons
 sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
-sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot ssh-askpass xclip
+sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot xclip lxpolkit
 # Software
 sudo apt install vim-gtk3 ranger
 ```
