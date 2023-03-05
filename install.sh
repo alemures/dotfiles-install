@@ -22,3 +22,9 @@ else
 fi;
 config checkout
 config config status.showUntrackedFiles no
+
+# Build scripts in typescript
+cd $HOME/scripts
+$NVM_BIN/npm install
+$NVM_BIN/npm run build
+
