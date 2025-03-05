@@ -23,7 +23,7 @@ fi;
 config checkout
 config config status.showUntrackedFiles no
 
-config submodule update --init --recursive --jobs=8 --recommend-shallow
+config submodule update --init --jobs=8 --recommend-shallow
 
 # Build scripts in typescript
 cd $HOME/scripts
