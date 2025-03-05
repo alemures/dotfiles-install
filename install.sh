@@ -21,7 +21,9 @@ else
   config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv $HOME/{} $BACKUP_FOLDER/{}
 fi;
 config checkout
+
 config config status.showUntrackedFiles no
+config config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 
 config submodule update --init --jobs=8 --recommend-shallow
 
