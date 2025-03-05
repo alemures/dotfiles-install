@@ -7,10 +7,10 @@ see: https://www.atlassian.com/git/tutorials/dotfiles
 #### Required Packages
 
 ```
-# Window Manager
-sudo apt install xorg i3
+# Window Manager and terminal
+sudo apt install xorg i3 rxvt-unicode
 # Themes gtk and qt
-sudo apt install gnome-themes-standard adwaita-icon-theme adwaita-qt qt5ct
+sudo apt install gnome-themes-extra adwaita-icon-theme adwaita-qt qt5ct
 # Fonts and Icons
 sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
