@@ -16,7 +16,7 @@ sudo apt install fonts-ubuntu fonts-font-awesome
 # General Utils
 sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot xclip lxpolkit
 # Software
-sudo apt install vim-gtk3 ranger
+sudo apt install vim-gtk3 ranger curl
 ```
 
 #### Optional Packages
