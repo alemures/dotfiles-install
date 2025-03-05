@@ -1,33 +1,17 @@
 ## dotfiles installation script
 
-This repo is intended to be cloned in a fresh new install of debian,refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps. Once the base installation is ready and configured, install the required packages.
+This repo is intended to be cloned in a fresh new install of debian, refer to [debian-setup.md](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e) gists to do the initials steps up to the section [Install firmware and cpu microcode](https://gist.github.com/alemures/bb9625bb909b7ddf45c03e766359010e#install-firmware-and-cpu-microcode). Once the base installation is ready and configured, install git, clone this repo and run the scripts in order:
 
-see: https://www.atlassian.com/git/tutorials/dotfiles
-
-#### Required Packages
-
+```bash
+sudo apt install git
+# clone this repo
+./1-install-software.sh
+exit
+# login again
+./2-setup-dotfiles.sh
+exit
+# login one more time to see i3 and you are done!
 ```
-# Window Manager and terminal
-sudo apt install xorg i3 rxvt-unicode
-# Themes gtk and qt
-sudo apt install gnome-themes-extra adwaita-icon-theme adwaita-qt qt5ct
-# Fonts and Icons
-sudo apt install fonts-ubuntu fonts-font-awesome
-# General Utils
-sudo apt install alsa-utils hsetroot git dunst libnotify-bin scrot xclip lxpolkit
-# Software
-sudo apt install vim-gtk3 ranger curl
-```
-
-#### Optional Packages
-
-```
-sudo apt install psmisc htop
-```
-
-Install nvm and nodejs LTS since some scripts are written in nodejs see [nvm install](https://github.com/nvm-sh/nvm#install--update-script)
-
-Finally run the script `install.sh`.
 
 ### Fixing keybindings in macOS under VirtualBox
 

@@ -28,11 +28,10 @@ config config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 # Pull vim plugins and ts scripts
 config submodule update --init --jobs=8 --recommend-shallow
 
-# Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-
 # Build scripts in typescript
+source "$HOME/.nvm/nvm.sh"
+nvm install --lts
 cd $HOME/scripts
-$NVM_BIN/npm install
-$NVM_BIN/npm run build
+npm install
+npm run build
 
