@@ -11,6 +11,7 @@ exit
 ./2-setup-dotfiles.sh
 exit
 # login one more time to see i3 and you are done!
+# Now you can check and install additional software running the remaining scripts
 ```
 
 ### Fixing keybindings in macOS under VirtualBox
