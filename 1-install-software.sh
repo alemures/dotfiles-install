@@ -7,7 +7,7 @@ sudo apt install -y gnome-themes-extra adwaita-icon-theme adwaita-qt qt5ct
 # Fonts and Icons
 sudo apt install -y fonts-ubuntu fonts-font-awesome
 # General Utils
-sudo apt install -y alsa-utils hsetroot dunst libnotify-bin scrot xclip lxpolkit lxappearance lxrandr xfce4-power-manager
+sudo apt install -y alsa-utils hsetroot dunst libnotify-bin scrot xclip lxpolkit lxappearance lxrandr xfce4-power-manager compton
 # Software
 sudo apt install -y vim-gtk3 ranger curl
 
