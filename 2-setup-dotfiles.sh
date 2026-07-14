@@ -27,10 +27,3 @@ config config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 
 # Pull vim plugins and ts scripts
 config submodule update --init --jobs=8 --recommend-shallow
-
-# Build scripts in typescript
-source "$HOME/.nvm/nvm.sh"
-nvm install --lts
-cd $HOME/scripts
-npm install
-npm run build

@@ -14,8 +14,5 @@ sudo apt install -y vim-gtk3 ranger curl
 # Additional packages
 sudo apt install -y psmisc htop
 
-# Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-
 # Install bun
 curl -fsSL https://bun.com/install | bash
