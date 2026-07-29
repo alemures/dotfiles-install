@@ -14,7 +14,7 @@ sudo apt install -y vim-gtk3 ranger curl
 sudo apt install -y rfkill resolvconf dhcpcd-base
 
 # Additional packages
-sudo apt install -y psmisc htop
+sudo apt install -y psmisc btop ripgrep fzf fastfetch
 
 # Install bun
 curl -fsSL https://bun.com/install | bash
