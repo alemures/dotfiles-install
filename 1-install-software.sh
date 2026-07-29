@@ -10,6 +10,8 @@ sudo apt install -y fonts-ubuntu fonts-font-awesome
 sudo apt install -y alsa-utils hsetroot dunst libnotify-bin scrot xclip lxpolkit lxappearance lxrandr xfce4-power-manager picom
 # Software
 sudo apt install -y vim-gtk3 ranger curl
+# WiFi
+sudo apt install -y rfkill resolvconf dhcpcd-base
 
 # Additional packages
 sudo apt install -y psmisc htop
